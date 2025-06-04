@@ -67,16 +67,187 @@
         </div>
     </nav>
 
-    <!--Tabs-->
-    <div class="tabs">
-        <ul class="nav justify-content-center">
-            <li class="feed">
-                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-table-cells"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-solid fa-square"></i></a>
-            </li>
+    <!-- Nav tabs -->
+    <ul class="nav justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab" aria-controls="grid" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="feed-tab" data-bs-toggle="tab" data-bs-target="#feed" type="button" role="tab" aria-controls="feed" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane active" id="grid" role="tabpanel" aria-labelledby="grid-tab" tabindex="0">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-4 mb-3">
+                        <div class="ratio ratio-1x1">
+                            <img src="imagenes/1-espacio.jpg" class="img-fluid object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="col-4 mb-3">
+                        <div class="ratio ratio-1x1">
+                            <img src="imagenes/2-plantas.jpg" class="img-fluid object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="col-4 mb-3">
+                        <div class="ratio ratio-1x1">
+                            <img src="imagenes/3-abuelos.jpg" class="img-fluid object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4 mb-3">
+                        <div class="ratio ratio-1x1">
+                            <img src="imagenes/4-perretes.jpg" class="img-fluid object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="col-4 mb-3">
+                        <div class="ratio ratio-1x1">
+                            <img src="imagenes/5-otoño.jpg" class="img-fluid object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="col-4 mb-3">
+                        <div class="ratio ratio-1x1">
+                            <img src="imagenes/6-bosque.jpg" class="img-fluid object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4 mb-3">
+                        <div class="ratio ratio-1x1">
+                            <img src="imagenes/7-oceano.jpg" class="img-fluid object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="col-4 mb-3">
+                        <div class="ratio ratio-1x1">
+                            <img src="imagenes/8-gatetes.jpg" class="img-fluid object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="col-4 mb-3">
+                        <div class="ratio ratio-1x1">
+                            <img src="imagenes/9-corazones.jpg" class="img-fluid object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="tab-pane" id="feed" role="tabpanel" aria-labelledby="feed-tab" tabindex="0">
+            <div class="container">
+                
+                <div class="header row justify-content-center">
+                    <div class="col-6 d-flex justify-content-between align-items-center border border-bottom-0 border-secondary-subtle p-2">
+                        <h4>Shine like stars!</h4>
+                        <p>04.jun.2025</p>
+                    </div>
+                </div>
+                <div class="img row justify-content-center">
+                    <div class="col-6 border border-start border-end border-top-0 border-bottom-0 border-secondary-subtle p-0">
+                        <img src="imagenes/1-espacio.jpg" class="img-fluid w-100 object-fit-fill">
+                    </div>
+                </div>
+                <div class="footer row justify-content-center">
+                    <div class="col-6 border border-top-0 border-secondary-subtle p-2 mb-3">
+                        <h6><strong>1.143 likes</strong></h6>
+                        <p>The sky is not the limit, it's just the start of the Universe.</p>
+                    </div>
+                </div>
+
+                <div class="header row justify-content-center">
+                    <div class="col-6 d-flex justify-content-between align-items-center border border-bottom-0 border-secondary-subtle p-2">
+                        <h4>"Leaf" me alone</h4>
+                        <p>04.jun.2025</p>
+                    </div>
+                </div>
+                <div class="img row justify-content-center">
+                    <div class="col-6 border border-start border-end border-top-0 border-bottom-0 border-secondary-subtle p-0">
+                        <img src="imagenes/2-plantas.jpg" class="img-fluid w-100 object-fit-cover">
+                    </div>
+                </div>
+                <div class="footer row justify-content-center">
+                    <div class="col-6 border border-top-0 border-secondary-subtle p-2 mb-3">
+                        <h6><strong>2.312 likes</strong></h6>
+                        <p>Welcome to the jungle... of my living-room.</p>
+                    </div>
+                </div>
+
+                <div class="header row justify-content-center">
+                    <div class="col-6 d-flex justify-content-between align-items-center border border-bottom-0 border-secondary-subtle p-2">
+                        <h4>Tiny moments, big love.</h4>
+                        <p>04.jun.2025</p>
+                    </div>
+                </div>
+                <div class="img row justify-content-center">
+                    <div class="col-6 border border-start border-end border-top-0 border-bottom-0 border-secondary-subtle p-0">
+                        <img src="imagenes/3-abuelos.jpg" class="img-fluid w-100 object-fit-cover">
+                    </div>
+                </div>
+                <div class="footer row justify-content-center">
+                    <div class="col-6 border border-top-0 border-secondary-subtle p-2 mb-3">
+                        <h6><strong>612 likes</strong></h6>
+                        <p>Love grows best at Grandma’s house.</p>
+                    </div>
+                </div>
+
+                 <div class="header row justify-content-center">
+                    <div class="col-6 d-flex justify-content-between align-items-center border border-bottom-0 border-secondary-subtle p-2">
+                        <h4>Pawsitivity</h4>
+                        <p>04.jun.2025</p>
+                    </div>
+                </div>
+                <div class="img row justify-content-center">
+                    <div class="col-6 border border-start border-end border-top-0 border-bottom-0 border-secondary-subtle p-0">
+                        <img src="imagenes/4-perretes.jpg" class="img-fluid w-100 object-fit-cover mx-auto">
+                    </div>
+                </div>
+                <div class="footer row justify-content-center">
+                    <div class="col-6 border border-top-0 border-secondary-subtle p-2 mb-3">
+                        <h6><strong>2.913 likes</strong></h6>
+                        <p>Sniff, bark, cuddle, repeat...</p>
+                    </div>
+                </div>
+
+                <div class="header row justify-content-center">
+                    <div class="col-6 d-flex justify-content-between align-items-center border border-bottom-0 border-secondary-subtle p-2">
+                        <h4>Pawsitivity</h4>
+                        <p>04.jun.2025</p>
+                    </div>
+                </div>
+                <div class="img row justify-content-center">
+                    <div class="col-6 border border-start border-end border-top-0 border-bottom-0 border-secondary-subtle p-0">
+                        <img src="imagenes/4-perretes.jpg" class="img-fluid w-100 object-fit-cover mx-auto">
+                    </div>
+                </div>
+                <div class="footer row justify-content-center">
+                    <div class="col-6 border border-top-0 border-secondary-subtle p-2 mb-3">
+                        <h6><strong>2.913 likes</strong></h6>
+                        <p>Sniff, bark, cuddle, repeat...</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
+
+   
+
+
+
+
+
+
+
 
 
 
